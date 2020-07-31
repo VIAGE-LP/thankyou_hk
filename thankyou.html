@@ -15,6 +15,7 @@
 	<meta http-equiv="Content-Style-Type" content="text/css" />
 	<meta name="authoring-tool" content="Adobe_Animate_CC">
 	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
 	<script src="../CommonFilesCrossing_TW2HK/js/jquery-3.3.1.min.js"></script>
 	<script src="../CommonFilesCrossing_TW2HK/js/jquery.cookie-1.4.1.min.js"></script>
 	<script src="../CommonFilesCrossing_TW2HK/thankyou/main.js?ver=20200407"></script>
@@ -23,7 +24,7 @@
 		redirectOrderInfo();
 	</script>
 	<!-- write your code here -->
-	<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+	<!-- <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script> -->
 	<script src="gift_bra.js?1553852348708"></script>
 	<script>
 		var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
@@ -182,6 +183,20 @@ div{
 			font-size: 16px;
 		}
 
+		.SP {
+			display: none;
+		}
+
+		@media screen and (max-width: 768px) {
+			.PC {
+				display: none;
+			}
+
+			.SP {
+				display: block;
+			}
+		}
+
 		a:link,
 		a:visited {
 			color: #2747C9;
@@ -215,8 +230,6 @@ div{
 			margin: 30px 0 20px 0;
 		}
 
-		.subtitle {}
-
 		.contents {
 			margin-bottom: 40px;
 		}
@@ -247,6 +260,18 @@ div{
 			text-align: left;
 			padding: 0 5%;
 			color: #464646;
+		}
+
+		.tx4 {
+			text-align: left;
+			padding: 30px 0 0 5%;
+			color: #464646;
+		}
+
+		@media screen and (max-width: 768px) {
+			.tx4 {
+				padding: 5%;
+			}
 		}
 
 		.red {
@@ -453,28 +478,60 @@ div{
 	<div class="container">
 		<div class="pageTitle"><img src="images/title.png" width="320" height="92" title="購物完成" /></div>
 		<div class="subtitle">
-			<p class="tx1" style="line-height:32px;
-	margin-bottom:10px;font-family: 'Noto Serif TC', serif;"><span
-					class="blue">非常感謝您的購買！<br>我們會盡快安排出貨給您，<br>並期待您下次的光臨！</span></p>
-		</div>
-		<div class="order">
-			<a href="https://forms.gle/Hr9gJtAmMWxaYivB8" target="blank"><img src="images/icon.gif" title=""></a>
-		</div>
-		<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00);text-align:center;">
-			<canvas id="canvas" width="560" height="550"
-				style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
-			<div id="dom_overlay_container"
-				style="pointer-events:none; overflow:hidden; width:560px; height:550px; position: absolute; left: 0px; top: 0px; display: block;">
-			</div>
-		</div>
-
-		<div class="contents">
-			<p class="tx3" style="padding-top: 30px;">
-				我們已經以電子郵件的方式寄出了您本次的訂購明細，還請您確認一下。<br>
-				商品將於您下單後的隔天～3個工作天內送至您手上。<br>
-				到貨當日，請務必確認有人可以收貨。<br>
-
+			<p class="tx1" style="line-height:32px; margin-bottom:10px;font-family: 'Noto Serif TC', serif;">
+				<span class="blue">非常感謝您的購買！<br>我們會盡快安排出貨給您，<br>並期待您下次的光臨！</span>
 			</p>
+		</div>
+		<!-- <div class="order">
+            <a href="https://forms.gle/Hr9gJtAmMWxaYivB8" target="blank"><img src="images/icon.gif" title=""></a>
+        </div>
+        <div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00);text-align:center;">
+            <canvas id="canvas" width="560" height="550"
+                style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+            <div id="dom_overlay_container"
+                style="pointer-events:none; overflow:hidden; width:560px; height:550px; position: absolute; left: 0px; top: 0px; display: block;">
+            </div>
+        </div> -->
+		<div class="qrcode PC" style="position: relative;">
+			<p class="animate__animated animate__flash animate__infinite"
+				style="font-size:25px;line-height:36px; position: absolute;top: 7%;left: 7%;">VIAGE官方 <span
+					style="color:#4CB233;font-weight: bold;">LINE@</span></p>
+			<p class="animate__animated animate__flash animate__infinite"
+				style="font-size:25px;line-height:36px;letter-spacing:4px;color:#859f84;font-weight: bold; position: absolute;top: 16%;left: 11%;">
+				立即掃描加入</p>
+			<img src="images/QR code_hk.jpg" alt="">
+			<p style="font-size:25px;line-height:36px;letter-spacing:4px; position: absolute;right: 11%;bottom: 28%;">
+				ID: @fhl1857j</p>
+			<p class="animate__animated animate__heartBeat animate__infinite "
+				style="font-size:24px;line-height:36px;color:#895c91;font-family: 'Noto Serif TC', serif;font-weight: bold;">
+				享最即時的<span style="color:#cf76a2">專屬優惠</span>及<br>最貼心的美胸保養資訊</p>
+		</div>
+		<div class="join_btn SP">
+			<p style="font-size:32px;line-height:36px;margin:4% 0;">VIAGE官方 <span
+					style="color:#4CB233;font-weight: bold;">LINE@</span></p>
+			<a href="https://bit.ly/39HR5wF" target="blank"><img src="images/join_btn.jpg" title="" style="width: 60%;"
+					class="animate__animated animate__heartBeat animate__infinite "></a>
+			<p class="animate__animated animate__flash animate__infinite"
+				style="font-size:24px;line-height:36px;color:#895c91;font-family: 'Noto Serif TC', serif;font-weight: bold;">
+				享最即時的<span style="color:#cf76a2">專屬優惠</span>及<br>最貼心的美胸保養資訊</p>
+		</div>
+		<div class="contents">
+			<div class="row" style="display:flex;flex-direction: row">
+				<div class="col-8" style="flex:2">
+					<p class="tx4">
+						我們已經以電子郵件的方式寄出了您本次的訂購明細，還請您確認一下。<br>
+						商品將於您下單後的隔天～3個工作天內送至您手上。<br>
+						到貨當日，請務必確認有人可以收貨。<br>
+					</p>
+				</div>
+				<div class="col-4 PC" style="flex:1">
+					<a href="https://forms.gle/Hr9gJtAmMWxaYivB8" target="blank"><img src="images/icon.gif" title=""
+							style="width: 85%;padding-top: 25%;"></a>
+				</div>
+			</div>
+			<div class="SP">
+				<a href="https://forms.gle/Hr9gJtAmMWxaYivB8" target="blank"><img src="images/icon.gif" title=""></a>
+			</div>
 			<div class="inform">
 				<ul>
 					<li>本商品屬個人衛生用品，係屬消保法第十九條第一項所稱合理例外情事，個人衛生用品不適用於七天猶豫期之規定，恕無法受理因個人因素之退換貨，敬請見諒。</li>
@@ -497,7 +554,7 @@ div{
 				<!-- <p class="footTitle">台灣娜珂黛肌</p> -->
 				<p class="footContents" style="line-height: 14px; margin-bottom: 6px;">傾聽您的需求，應援您的健康生活</p>
 				<p class="footContents">
-					TEL：<a href="tel:+886-2-2321-1502" data-content="+886-2-2321-1502">+886-2-2321-1501</a><br>
+					TEL：<a href="tel:+886-2-2321-1501" data-content="+886-2-2321-1501">+886-2-2321-1501</a><br>
 					E-mail：<a href="mailto:support@viagebeautybra.com">support@viagebeautybra.com</a>
 					<br>
 					週一至週五 11:00-18:00​ (國定例假日除外)
@@ -508,7 +565,7 @@ div{
 					<tbody>
 						<tr>
 							<td><a href="https://www.facebook.com/viage.tw/" target="_blank"><img
-										src="images/icon_fb.png" height="40px"></a></td>
+                                        src="images/icon_fb.png" height="40px"></a></td>
 							<td><a href="https://www.instagram.com/viage_tw/?hl=zh-tw" target="_blank"><img
 										src="images/icon_ig.png" height="40px"></a></td>
 							<td><a href="https://line.me/R/ti/p/%40fhl1857j" target="_blank"><img
