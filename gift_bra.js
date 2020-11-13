@@ -594,11 +594,11 @@ p.nominalBounds = new cjs.Rectangle(-158.7,-44.2,317.4,89.1);
 		   保留引號 ("")。
 		*/
 		
-		this.button_4.addEventListener("click", fl_ClickToGoToWebPage_3);
+		// this.button_4.addEventListener("click", fl_ClickToGoToWebPage_3);
 		
-		function fl_ClickToGoToWebPage_3() {
-			window.open("https://forms.gle/Hr9gJtAmMWxaYivB8", "_blank");
-		}
+		// function fl_ClickToGoToWebPage_3() {
+		// 	window.open("https://bit.ly/2Wi3dg5", "_blank");
+		// }
 	}
 	this.frame_33 = function() {
 		this.gotoAndPlay(22);
@@ -607,37 +607,38 @@ p.nominalBounds = new cjs.Rectangle(-158.7,-44.2,317.4,89.1);
 	// actions tween:
 	this.timeline.addTween(cjs.Tween.get(this).wait(23).call(this.frame_23).wait(10).call(this.frame_33).wait(1));
 
-	// 圖層 1
-	this.instance = new lib.hand_mc();
-	this.instance.parent = this;
-	this.instance.setTransform(425.45,404.65);
-	this.instance._off = true;
+	// 圖層 1_手指
+	// this.instance = new lib.hand_mc();
+	// this.instance.parent = this;
+	// this.instance.setTransform(425.45,404.65);
+	// this.instance._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(22).to({_off:false},0).wait(12));
+	// this.timeline.addTween(cjs.Tween.get(this.instance).wait(22).to({_off:false},0).wait(12));
 
 	// 圖層_4
-	this.button_4 = new lib.元件1();
-	this.button_4.name = "button_4";
-	this.button_4.parent = this;
-	this.button_4.setTransform(309.8,346.95);
-	this.button_4._off = true;
-	new cjs.ButtonHelper(this.button_4, 0, 1, 2, false, new lib.元件1(), 3);
+	// this.button_4 = new lib.元件1();
+	// this.button_4.name = "button_4";
+	// this.button_4.parent = this;
+	// this.button_4.setTransform(309.8,346.95);
+	// this.button_4._off = true;
+	// new cjs.ButtonHelper(this.button_4, 0, 1, 2, false, new lib.元件1(), 3);
 
-	this.timeline.addTween(cjs.Tween.get(this.button_4).wait(19).to({_off:false},0).wait(15));
+	// this.timeline.addTween(cjs.Tween.get(this.button_4).wait(19).to({_off:false},0).wait(15));
 
 	// word
-	this.instance_1 = new lib.tits_mc();
-	this.instance_1.parent = this;
-	this.instance_1.setTransform(309.25,291.5,0.9787,0.9787,0,0,0,0,0.1);
-	this.instance_1.alpha = 0;
-	this.instance_1._off = true;
+	// this.instance_1 = new lib.tits_mc();
+	// this.instance_1.parent = this;
+	// this.instance_1.setTransform(309.25,291.5,0.9787,0.9787,0,0,0,0,0.1);
+	// this.instance_1.alpha = 0;
+	// this.instance_1._off = true;
 
-	this.instance_2 = new lib.tits_mc_re();
-	this.instance_2.parent = this;
-	this.instance_2.setTransform(309.25,346.5,0.9787,0.9787,0,0,0,0,0.1);
+	// this.instance_2 = new lib.tits_mc_re();
+	// this.instance_2.parent = this;
+	// this.instance_2.setTransform(309.25,346.5,0.9787,0.9787,0,0,0,0,0.1);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_1}]},12).to({state:[{t:this.instance_1}]},7).to({state:[{t:this.instance_2}]},1).wait(14));
-	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(12).to({_off:false},0).to({y:346.5,alpha:1},7).to({_off:true},1).wait(14));
+	// this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_1}]},12).to({state:[{t:this.instance_1}]},7).to({state:[{t:this.instance_2}]},1).wait(14));
+	// this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(12).to({_off:false},0).to({y:346.5,alpha:1},7).to({_off:true},1).wait(14));
+	
 
 	// cloth
 	this.instance_3 = new lib.cloth_mc();
