@@ -24,9 +24,9 @@
 		redirectOrderInfo();
 	</script>
 	<!-- write your code here -->
-	<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
-	<script src="gift_bra.js?1553852348708"></script>
-	<script>
+	<!-- <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+	<script src="gift_bra.js?1553852348708"></script> -->
+	<!-- <script>
 		var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 		function init() {
 			canvas = document.getElementById("canvas");
@@ -102,7 +102,7 @@
 			AdobeAn.compositionLoaded(lib.properties.id);
 			fnStartAnimation();
 		}
-	</script>
+	</script> -->
 	<!-- write your code here -->
 
 	<style type="text/css">
@@ -329,6 +329,12 @@ div{
 		.order {
 			display: none;
 		}
+		img.finger{
+			position: absolute; 
+			width:20%;
+			right: 17%;
+			top: 37%;
+		}
 
 		@media all and (max-width: 768px) {
 			body {
@@ -348,6 +354,10 @@ div{
 
 			.order {
 				display: block;
+			}
+
+			img.finger{
+				right: 4%;
 			}
 		}
 	</style>
@@ -478,26 +488,17 @@ div{
 	margin-bottom:10px;font-family: 'Noto Serif TC', serif;"><span
 					class="blue">非常感謝您的購買！<br>我們會盡快安排出貨給您，<br>並期待您下次的光臨！</span></p>
 		</div>
-		<div class="order">
-			<a href="https://forms.gle/WEhw9tucJaT2Md6y9" target="blank"><img src="images/icon.gif" title=""></a>
+		<div class="main_photo " style="position: relative;">
+			<a href="https://forms.gle/WEhw9tucJaT2Md6y9" target="blank">
+				<img src="images/question_btn.png" alt="">
+				<img src="images/finger.png" alt="" class="finger animate__animated animate__flash animate__infinite">
+			</a>
 		</div>
-		<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00);text-align:center;">
-			<canvas id="canvas" width="560" height="550"
-				style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
-			<div id="dom_overlay_container"
-				style="pointer-events:none; overflow:hidden; width:560px; height:550px; position: absolute;  display: block;">
-				<a href="https://forms.gle/WEhw9tucJaT2Md6y9" target="blank">
-					<div class="formtext animate__animated animate__heartBeat animate__infinite "
-						style="position: absolute;right:19%;top:34%">
-						<p style="color:#885C91;font-size:1.5rem;">填寫問券<br> 讓「<span
-								style="color:#cf76a2">Viage晚安立體美型內衣</span>」<br>應援您的美麗生活</p>
-					</div>
-					<img style="position: absolute;right:14%;top:50%;width:20%"
-						class="animate__animated animate__heartBeat animate__infinite " src="images/finger.png" alt="">
-				</a>
-			</div>
-			
+		<div class="main_text" style="padding-top:7%">
+			<p style="color:#885C91;font-size:1.5rem;">讓「<span style="color:#cf76a2">Viage晚安立體美型內衣</span>」</p>
+			<p style="color:#885C91;font-size:1.5rem;">應援你的美麗生活</p>
 		</div>
+		<img src="images/flower.jpg" style="width:100%;" alt="">
 
 		<div class="contents">
 			<p class="tx3" style="padding-top: 30px;">
